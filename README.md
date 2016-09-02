@@ -4,5 +4,5 @@
 
 Project will be use:
 * Kotlin
-* RxJava
+* RxJava2
 * Firebase cloud

@@ -4,6 +4,11 @@ sudo: false
 language: android
 jdk: oraclejdk8
 
+env:
+  global:
+    - ANDROID_TARGET=android-24
+    - ANDROID_ABI=armeabi-v7a
+
 android:
   components:
     - platform-tools
@@ -12,7 +17,10 @@ android:
     - android-24
     - extra-android-m2repository
     - extra-android-support
-    - sys-img-armeabi-v7a-android-18
+    - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
+
+script:
+    - ./gradlew build jacocoTestReport assembleAndroidTest
 
 before_install:
   - pip install --user codecov

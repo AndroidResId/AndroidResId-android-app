@@ -9,3 +9,6 @@ android:
     - android-22
     - android-24
     - extra-android-m2repository
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

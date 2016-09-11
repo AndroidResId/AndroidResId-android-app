@@ -2,13 +2,14 @@ package com.androidresid.androidapp
 
 import org.junit.Assert
 import org.junit.Test
+import kotlin.test.assertTrue
 
 class KotlinJunitTest {
 
     @Test
     fun firstTest() {
-        Assert.assertTrue(1 == 1)
+        val mainActivity = MainActivity();
+        assertTrue(mainActivity.isCoverageTestWorks());
     }
 
 }
-

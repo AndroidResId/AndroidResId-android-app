@@ -1,3 +1,6 @@
+# Disabling sudo moves build to the Container Based Infrastructure on Travis CI
+sudo: false
+
 language: android
 jdk: oraclejdk8
 
@@ -6,9 +9,18 @@ android:
     - platform-tools
     - tools
     - build-tools-24.0.2
-    - android-22
     - android-24
     - extra-android-m2repository
+    - extra-android-support
+    - sys-img-armeabi-v7a-android-18
+
+before_install:
+  - pip install --user codecov
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - codecov
+
+cache:
+  directories:
+    - $HOME/.m2
+    - $HOME/.gradle

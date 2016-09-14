@@ -12,4 +12,10 @@ class KotlinJunitTest {
         assertTrue(mainActivity.isCoverageTestWorks());
     }
 
+    @Test
+    fun secondTest() {
+        val mainActivity = MainActivity();
+        assertTrue(mainActivity.isUnitTestCoverageWorks());
+    }
+
 }

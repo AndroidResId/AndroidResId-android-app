@@ -13,4 +13,8 @@ class MainActivity : Activity() {
     fun isCoverageTestWorks() : Boolean {
         return true;
     }
+
+    fun isUnitTestCoverageWorks(): Boolean {
+        return false;
+    }
 }

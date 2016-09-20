@@ -1,7 +1,6 @@
 apply from: 'dependencies.gradle'
 
 buildscript {
-    ext.kotlin_version = '1.0.3'
     apply from: 'dependencies.gradle'
 
     repositories {
@@ -12,7 +11,6 @@ buildscript {
         classpath "com.android.tools.build:gradle:$versions.gradle"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
         classpath "com.dicedmelon.gradle:jacoco-android:$versions.jacoco"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 

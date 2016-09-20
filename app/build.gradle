@@ -49,16 +49,20 @@ android {
     lintOptions {
         htmlReport true
         htmlOutput file("lint-report.html")
-        abortOnError true
+        abortOnError false
         warningsAsErrors true
     }
 }
 
 dependencies {
+    compile libraries.appcompat
     compile libraries.kotlinStdlib
     compile libraries.kotlinReflect
+    compile libraries.anko
 
     testCompile libraries.junit
     testCompile libraries.mockitoCore
     testCompile libraries.kotlinJunit
+
+    androidTestCompile libraries.espresso
 }

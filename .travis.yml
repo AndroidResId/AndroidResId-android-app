@@ -26,19 +26,14 @@ android:
     - android-24
     - extra-android-m2repository
     - extra-android-support
-    - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
 
 script:
-    - ./gradlew build jacocoTestReport assembleAndroidTest
     - ./gradlew clean assembleDebug test lint
+    - ./gradlew build jacocoTestReport assembleAndroidTest
+    
 
 before_install:
   - pip install --user codecov
 
 after_success:
   - codecov
-
-cache:
-  directories:
-    - $HOME/.m2
-    - $HOME/.gradle

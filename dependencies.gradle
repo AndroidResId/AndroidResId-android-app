@@ -7,19 +7,25 @@ ext.versions = [
         compileSdk          : 24,
         buildTools          : '24.0.2',
 
-        gradle              : '2.1.3',
+        gradle              : '2.2.0',
+        support             : '24.2.1',
         kotlin              : '1.0.3',
+        anko                : '0.9',
         jacoco              : '0.1.1',
 
         junit               : '4.12',
         mockito             : '2.1.0-RC.1',
+        espresso            : '2.2.2',
 ]
 
 ext.libraries = [
+        appcompat           : "com.android.support:appcompat-v7:$versions.support",
         kotlinStdlib        : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
         kotlinReflect       : "org.jetbrains.kotlin:kotlin-reflect:$versions.kotlin",
+        anko                : "org.jetbrains.anko:anko-sdk19:$versions.anko",
 
         junit               : "junit:junit:$versions.junit",
         kotlinJunit         : "org.jetbrains.kotlin:kotlin-test-junit:$versions.kotlin",
-        mockitoCore         : "org.mockito:mockito-core:$versions.mockito"
+        mockitoCore         : "org.mockito:mockito-core:$versions.mockito",
+        espresso            : "com.android.support.test.espresso:espresso-core:$versions.espresso"
 ]

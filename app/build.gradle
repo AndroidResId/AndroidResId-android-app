@@ -59,6 +59,9 @@ dependencies {
     compile libraries.kotlinStdlib
     compile libraries.kotlinReflect
     compile libraries.anko
+    compile libraries.ankoSupport
+    compile libraries.ankoAppCompat
+    compile libraries.ankoDesign
 
     testCompile libraries.junit
     testCompile libraries.mockitoCore

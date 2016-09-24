@@ -23,6 +23,9 @@ ext.libraries = [
         kotlinStdlib        : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
         kotlinReflect       : "org.jetbrains.kotlin:kotlin-reflect:$versions.kotlin",
         anko                : "org.jetbrains.anko:anko-sdk19:$versions.anko",
+        ankoSupport         : "org.jetbrains.anko:anko-support-v4:$versions.anko",
+        ankoAppCompat       : "org.jetbrains.anko:anko-appcompat-v7:$versions.anko",
+        ankoDesign          : "org.jetbrains.anko:anko-design:$versions.anko",
 
         junit               : "junit:junit:$versions.junit",
         kotlinJunit         : "org.jetbrains.kotlin:kotlin-test-junit:$versions.kotlin",

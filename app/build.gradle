@@ -56,6 +56,8 @@ android {
 
 dependencies {
     compile libraries.appcompat
+    compile libraries.appSupport
+    compile libraries.design
     compile libraries.kotlinStdlib
     compile libraries.kotlinReflect
     compile libraries.anko

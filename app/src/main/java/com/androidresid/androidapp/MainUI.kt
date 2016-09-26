@@ -5,6 +5,7 @@ import android.support.v4.content.ContextCompat
 import android.support.v4.view.GravityCompat
 import android.util.TypedValue
 import android.view.Gravity
+import android.view.View
 import org.jetbrains.anko.*
 import org.jetbrains.anko.appcompat.v7.toolbar
 import org.jetbrains.anko.design.appBarLayout
@@ -16,7 +17,7 @@ import org.jetbrains.anko.support.v4.drawerLayout
 
 class MainUI : AnkoComponent<MainActivity> {
 
-    override fun createView(ui: AnkoContext<MainActivity>) = with(ui) {
+    override fun createView(ui: AnkoContext<MainActivity>): View = with(ui) {
         drawerLayout {
             id = R.id.drawer
             fitsSystemWindows = true
@@ -30,7 +31,7 @@ class MainUI : AnkoComponent<MainActivity> {
                     }.lparams(width = matchParent) {
                         val tv = TypedValue()
                         if (ui.owner.theme.resolveAttribute(R.attr.actionBarSize, tv, true)) {
-                            height = TypedValue.complexToDimensionPixelSize(tv.data, resources.displayMetrics);
+                            height = TypedValue.complexToDimensionPixelSize(tv.data, resources.displayMetrics)
                         }
                     }
                 }.lparams(width = matchParent)

@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         MainUI().setContentView(this)
+
+
         drawer = find<DrawerLayout>(R.id.drawer)
 
         val toolbar = find<Toolbar>(R.id.toolbar)

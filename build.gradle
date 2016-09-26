@@ -1,6 +1,10 @@
 apply from: 'dependencies.gradle'
 
 buildscript {
+    ext.gradle_version = '2.2.0'
+    ext.kotlin_version = '1.0.4'
+    ext.jacoco_version = '0.1.1'
+
     apply from: 'dependencies.gradle'
 
     repositories {
@@ -8,9 +12,9 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:$versions.gradle"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
-        classpath "com.dicedmelon.gradle:jacoco-android:$versions.jacoco"
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.dicedmelon.gradle:jacoco-android:$jacoco_version"
     }
 }
 

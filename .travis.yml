@@ -28,9 +28,8 @@ android:
     - extra-android-support
 
 script:
-    - ./gradlew clean assembleDebug test lint
     - ./gradlew build jacocoTestReport assembleAndroidTest
-    
+    - ./gradlew clean build connectedAndroidTest -PdisablePreDex -PwithDexcount
 
 before_install:
   - pip install --user codecov

@@ -22,7 +22,6 @@ class MainUI : AnkoComponent<MainActivity> {
             id = R.id.drawer
             fitsSystemWindows = true
             coordinatorLayout {
-                fitsSystemWindows = true
 
                 appBarLayout {
                     toolbar {

@@ -9,7 +9,7 @@ ext.versions = [
 
         gradle              : '2.2.0',
         support             : '24.2.1',
-        kotlin              : '1.0.3',
+        kotlin              : '1.0.4',
         anko                : '0.9',
         jacoco              : '0.1.1',
 

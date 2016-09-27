@@ -11,6 +11,5 @@ class KotlinJunitTest {
         assertTrue(mainActivity.isCoverageTestWorks())
         val mainUI = MainUI()
         assertTrue(mainUI.isCoverageTestWorks())
-
     }
 }

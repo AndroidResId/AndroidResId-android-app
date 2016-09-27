@@ -3,6 +3,4 @@
     <item
         android:id="@+id/action_settings"
         android:title="Setting" />
-
-
 </menu>

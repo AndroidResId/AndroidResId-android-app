@@ -8,4 +8,4 @@ Project use:
 * Kotlin
 * RxJava2
 * Firebase cloud
-* Git Flow https://guides.github.com/introduction/flow/
+* Git Flow https://github.com/nvie/gitflow

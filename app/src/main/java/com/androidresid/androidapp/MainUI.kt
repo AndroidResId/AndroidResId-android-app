@@ -64,4 +64,8 @@ class MainUI : AnkoComponent<MainActivity> {
             }.lparams(height = matchParent, gravity = GravityCompat.START)
         }
     }
+
+    fun isCoverageTestWorks(): Boolean {
+        return true
+    }
 }

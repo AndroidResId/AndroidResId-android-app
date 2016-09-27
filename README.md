@@ -8,3 +8,4 @@ Project will be use:
 * Kotlin
 * RxJava2
 * Firebase cloud
+* Git Flow https://guides.github.com/introduction/flow/

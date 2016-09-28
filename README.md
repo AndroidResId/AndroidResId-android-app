@@ -11,4 +11,4 @@ Project use:
 And we will try:
 * MVVM https://github.com/BennyWang/KBinding
 * Git Flow https://github.com/nvie/gitflow
-* Firebase cloud
+* Firebase

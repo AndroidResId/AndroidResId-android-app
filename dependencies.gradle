@@ -3,7 +3,7 @@ ext.versions = [
         name                : '0.1',
 
         minSdk              : 19,
-        targetSdk           : 22,
+        targetSdk           : 24,
         compileSdk          : 24,
         buildTools          : '24.0.2',
 
@@ -16,6 +16,7 @@ ext.versions = [
         junit               : '4.12',
         mockito             : '2.1.0-RC.1',
         espresso            : '2.2.2',
+        robolectric         : '3.1.2'
 ]
 
 ext.libraries = [
@@ -33,5 +34,5 @@ ext.libraries = [
         kotlinJunit  : "org.jetbrains.kotlin:kotlin-test-junit:$versions.kotlin",
         mockitoCore  : "org.mockito:mockito-core:$versions.mockito",
         espresso     : "com.android.support.test.espresso:espresso-core:$versions.espresso",
-        robolectric  : "org.robolectric:robolectric:3.1.2"
+        robolectric  : "org.robolectric:robolectric:$versions.robolectric"
 ]

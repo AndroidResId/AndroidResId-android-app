@@ -1,5 +1,6 @@
 package com.androidresid.androidapp
 
+import android.os.Build
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Robolectric
@@ -9,7 +10,7 @@ import kotlin.test.assertNotNull
 import kotlin.test.assertTrue
 
 @RunWith(RobolectricTestRunner::class)
-@Config(constants = BuildConfig::class)
+@Config(constants = BuildConfig::class, manifest = "AndroidManifest.xml", sdk = intArrayOf(Build.VERSION_CODES.LOLLIPOP))
 
 
 class MainActivityTest {
@@ -22,7 +23,7 @@ class MainActivityTest {
 
     @Test
     fun isShouldDisplayTitle(){
-        assertTrue(activity.title.toString().equals("AndroidResId"))
+        assertTrue(activity.title.toString() == ("AndroidResId"))
     }
 
     @Test
@@ -34,6 +35,11 @@ class MainActivityTest {
     fun itShouldDisplayNavigationDrawer(){
         val drawer = activity.findViewById(R.id.drawer)
         assertNotNull(drawer)
+    }
+    @Test
+    fun itShouldMenuItemSetting(){
+
+
     }
 
 }

@@ -8,6 +8,7 @@ import org.robolectric.Robolectric
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 import org.robolectric.fakes.RoboMenuItem
+import org.robolectric.shadows.ShadowToast
 import kotlin.test.assertNotNull
 import kotlin.test.assertTrue
 
@@ -41,8 +42,9 @@ class MainActivityTest {
     }
     @Test
     fun itShouldMenuItemSetting(){
-        RoboMenuItem(R.id.action_settings)
+        RoboMenuItem(R.id.action_settings).isVisible
         activity.onOptionsItemSelected(RoboMenuItem(R.id.action_settings))
+        assertTrue(ShadowToast.getTextOfLatestToast() == ("Settings"))
     }
 
 }

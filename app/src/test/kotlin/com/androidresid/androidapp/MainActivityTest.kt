@@ -11,9 +11,8 @@ import kotlin.test.assertTrue
 
 @RunWith(RobolectricTestRunner::class)
 @Config(constants = BuildConfig::class, manifest = "AndroidManifest.xml", sdk = intArrayOf(Build.VERSION_CODES.LOLLIPOP))
-
-
 class MainActivityTest {
+
     val activity = Robolectric.buildActivity(MainActivity::class.java)
             .create()
             .start()
@@ -38,7 +37,6 @@ class MainActivityTest {
     }
     @Test
     fun itShouldMenuItemSetting(){
-
 
     }
 

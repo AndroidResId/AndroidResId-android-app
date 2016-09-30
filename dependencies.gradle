@@ -7,20 +7,31 @@ ext.versions = [
         compileSdk          : 24,
         buildTools          : '24.0.2',
 
-        support             : '24.2.1',
+        gradle              : '2.2.0',
+        support             : '24.2.0',
         anko                : '0.9',
+        jacoco              : '0.1.1',
 
         junit               : '4.12',
-        mockito             : '2.1.0-RC.1'
+        mockito             : '2.1.0-RC.1',
+        espresso            : '2.2.2',
+        robolectric         : '3.1.2'
 ]
 
 ext.libraries = [
-        appcompat           : "com.android.support:appcompat-v7:$versions.support",
-        kotlinStdlib        : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
-        kotlinReflect       : "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
-        anko                : "org.jetbrains.anko:anko-sdk19:$versions.anko",
+        appcompat    : "com.android.support:appcompat-v7:$versions.support",
+        kotlinStdlib : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+        kotlinReflect: "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
+        anko         : "org.jetbrains.anko:anko-sdk19:$versions.anko",
+        ankoSupport  : "org.jetbrains.anko:anko-support-v4:$versions.anko",
+        ankoAppCompat: "org.jetbrains.anko:anko-appcompat-v7:$versions.anko",
+        ankoDesign   : "org.jetbrains.anko:anko-design:$versions.anko",
+        design       : "com.android.support:design:$versions.support",
+        appSupport   : "com.android.support:support-v4:$versions.support",
 
-        junit               : "junit:junit:$versions.junit",
-        kotlinJunit         : "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version",
-        mockitoCore         : "org.mockito:mockito-core:$versions.mockito"
+        junit        : "junit:junit:$versions.junit",
+        kotlinJunit  : "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version",
+        mockitoCore  : "org.mockito:mockito-core:$versions.mockito",
+        espresso     : "com.android.support.test.espresso:espresso-core:$versions.espresso",
+        robolectric  : "org.robolectric:robolectric:$versions.robolectric"
 ]

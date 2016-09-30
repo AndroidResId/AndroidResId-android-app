@@ -56,14 +56,18 @@ android {
 
 dependencies {
     compile libraries.appcompat
+    compile libraries.appSupport
+    compile libraries.design
     compile libraries.kotlinStdlib
     compile libraries.kotlinReflect
     compile libraries.anko
-
+    compile libraries.ankoSupport
+    compile libraries.ankoAppCompat
+    compile libraries.ankoDesign
     testCompile libraries.junit
     testCompile libraries.mockitoCore
     testCompile libraries.kotlinJunit
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testCompile libraries.robolectric
 }
 repositories {
     mavenCentral()

@@ -9,7 +9,6 @@ ext.versions = [
 
         gradle              : '2.2.0',
         support             : '24.2.0',
-        kotlin              : '1.0.4',
         anko                : '0.9',
         jacoco              : '0.1.1',
 
@@ -21,8 +20,8 @@ ext.versions = [
 
 ext.libraries = [
         appcompat    : "com.android.support:appcompat-v7:$versions.support",
-        kotlinStdlib : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
-        kotlinReflect: "org.jetbrains.kotlin:kotlin-reflect:$versions.kotlin",
+        kotlinStdlib : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+        kotlinReflect: "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
         anko         : "org.jetbrains.anko:anko-sdk19:$versions.anko",
         ankoSupport  : "org.jetbrains.anko:anko-support-v4:$versions.anko",
         ankoAppCompat: "org.jetbrains.anko:anko-appcompat-v7:$versions.anko",
@@ -31,7 +30,7 @@ ext.libraries = [
         appSupport   : "com.android.support:support-v4:$versions.support",
 
         junit        : "junit:junit:$versions.junit",
-        kotlinJunit  : "org.jetbrains.kotlin:kotlin-test-junit:$versions.kotlin",
+        kotlinJunit  : "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version",
         mockitoCore  : "org.mockito:mockito-core:$versions.mockito",
         espresso     : "com.android.support.test.espresso:espresso-core:$versions.espresso",
         robolectric  : "org.robolectric:robolectric:$versions.robolectric"

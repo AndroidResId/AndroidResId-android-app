@@ -7,5 +7,8 @@
 Project use:
 * Kotlin
 * RxJava2
-* Firebase cloud
+
+And we will try:
+* MVVM https://github.com/BennyWang/KBinding
 * Git Flow https://github.com/nvie/gitflow
+* Firebase

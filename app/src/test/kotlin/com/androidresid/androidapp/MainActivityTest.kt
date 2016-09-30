@@ -24,26 +24,29 @@ class MainActivityTest {
             .get()
 
     @Test
-    fun isShouldDisplayTitle(){
+    fun isShouldDisplayTitle() {
         assertTrue(activity.title.toString() == ("AndroidResId"))
     }
 
     @Test
-    fun itShouldDisplayToolbar(){
+    fun itShouldDisplayToolbar() {
         val toolbar = activity.findViewById(R.id.toolbar)
         assertNotNull(toolbar)
         assertTrue(toolbar.visibility == View.VISIBLE)
     }
+
     @Test
-    fun itShouldDisplayNavigationDrawer(){
+    fun itShouldDisplayNavigationDrawer() {
         val drawer = activity.findViewById(R.id.drawer)
         assertNotNull(drawer)
         assertTrue(drawer.visibility == View.VISIBLE)
     }
+
     @Test
-    fun itShouldMenuItemSetting(){
-        RoboMenuItem(R.id.action_settings).isVisible
-        activity.onOptionsItemSelected(RoboMenuItem(R.id.action_settings))
+    fun itShouldMenuItemSetting() {
+        val menu = RoboMenuItem(R.id.action_settings)
+        assertTrue(menu.isVisible)
+        activity.onOptionsItemSelected(menu)
         assertTrue(ShadowToast.getTextOfLatestToast() == ("Settings"))
     }
 

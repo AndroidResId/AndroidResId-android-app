@@ -67,8 +67,9 @@ dependencies {
     compile libraries.firebase
 
     testCompile libraries.junit
-    testCompile libraries.mockitoCore
     testCompile libraries.kotlinJunit
+    testCompile libraries.mockitoCore
+    testCompile libraries.espresso
     testCompile libraries.robolectric
 }
 repositories {

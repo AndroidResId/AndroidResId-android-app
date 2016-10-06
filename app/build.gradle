@@ -64,9 +64,12 @@ dependencies {
     compile libraries.ankoSupport
     compile libraries.ankoAppCompat
     compile libraries.ankoDesign
+    compile libraries.firebase
+
     testCompile libraries.junit
-    testCompile libraries.mockitoCore
     testCompile libraries.kotlinJunit
+    testCompile libraries.mockitoCore
+    testCompile libraries.espresso
     testCompile libraries.robolectric
 }
 repositories {

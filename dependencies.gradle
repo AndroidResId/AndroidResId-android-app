@@ -3,17 +3,17 @@ ext.versions = [
         name                : '0.1',
 
         minSdk              : 19,
-        targetSdk           : 24,
-        compileSdk          : 24,
-        buildTools          : '24.0.2',
+        targetSdk           : 25,
+        compileSdk          : 25,
+        buildTools          : '25.0.0',
 
         gradle              : '2.2.0',
-        support             : '24.2.0',
+        support             : '25.0.0',
         anko                : '0.9',
         jacoco              : '0.1.1',
 
         junit               : '4.12',
-        mockito             : '2.1.0-RC.1',
+        mockito             : '2.1.0',
         espresso            : '2.2.2',
         robolectric         : '3.1.2'
 ]

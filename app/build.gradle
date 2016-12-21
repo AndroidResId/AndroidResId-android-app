@@ -64,6 +64,9 @@ dependencies {
     compile libraries.ankoSupport
     compile libraries.ankoAppCompat
     compile libraries.ankoDesign
+    compile libraries.rxJava
+    compile libraries.rxAndroid
+
     testCompile libraries.junit
     testCompile libraries.mockitoCore
     testCompile libraries.kotlinJunit

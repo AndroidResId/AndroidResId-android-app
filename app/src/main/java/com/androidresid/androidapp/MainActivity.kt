@@ -13,7 +13,6 @@ import org.jetbrains.anko.find
 import org.jetbrains.anko.setContentView
 import org.jetbrains.anko.toast
 
-
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     val drawer by lazy { find<DrawerLayout>(R.id.drawer) }

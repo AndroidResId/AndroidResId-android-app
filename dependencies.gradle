@@ -9,6 +9,8 @@ ext.versions = [
 
         gradle              : '2.2.3',
         support             : '25.1.0',
+        rxJava              : '2.0.3',
+        rxAndroid           : '2.0.0',
         anko                : '0.9',
         jacoco              : '0.1.1',
 
@@ -28,6 +30,8 @@ ext.libraries = [
         ankoDesign   : "org.jetbrains.anko:anko-design:$versions.anko",
         design       : "com.android.support:design:$versions.support",
         appSupport   : "com.android.support:support-v4:$versions.support",
+        rxJava       : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
+        rxAndroid    : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
 
         junit        : "junit:junit:$versions.junit",
         kotlinJunit  : "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version",

@@ -58,6 +58,7 @@ dependencies {
     compile libraries.appcompat
     compile libraries.appSupport
     compile libraries.design
+    compile libraries.constraint
     compile libraries.kotlinStdlib
     compile libraries.kotlinReflect
     compile libraries.anko

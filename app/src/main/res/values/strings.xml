@@ -5,4 +5,7 @@
     <string name="navigation_drawer_close">Drawer close</string>
     <string name="about">About</string>
     <string name="setting">Setting</string>
+    <string name="telegram_channel">Telegram channel</string>
+    <string name="github_repository">GitHub Repository</string>
+    <string name="web">Web</string>
 </resources>

@@ -1,9 +1,9 @@
 package com.androidresid.androidapp
+
 import android.content.Context
 import android.content.pm.PackageManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.Toolbar
 import android.widget.TextView
 import com.androidresid.androidapp.components.AboutUI
 import org.jetbrains.anko.browse
@@ -32,8 +32,6 @@ class AboutActivity : AppCompatActivity() {
         webLink.onClick {
             browse("http://androidresid.com/")
         }
-
-
     }
 
     fun intentTelegram() {

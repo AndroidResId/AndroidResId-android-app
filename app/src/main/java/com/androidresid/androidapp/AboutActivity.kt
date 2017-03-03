@@ -32,15 +32,30 @@ class AboutActivity : AppCompatActivity() {
         webLink.onClick {
             browse("http://androidresid.com/")
         }
+
+        val twitterLink = find<TextView>(R.id.twitter_link)
+        twitterLink.onClick {
+            intentTwitter()
+        }
     }
 
-    fun intentTelegram() {
+    private fun intentTwitter() {
         val appName = "org.telegram.messenger"
         val isAppInstalled = isAppAvailable(applicationContext, appName)
         if (isAppInstalled) {
             browse("tg://resolve?domain=AndroidResId")
         } else {
             browse("https://telegram.me/AndroidResId")
+        }
+    }
+
+    fun intentTelegram() {
+        val appName = "com.twitter.android"
+        val isAppInstalled = isAppAvailable(applicationContext, appName)
+        if (isAppInstalled) {
+            browse("twitter://user?screen_name=AndroidResId")
+        } else {
+            browse("https://twitter.com/AndroidResId")
         }
     }
 

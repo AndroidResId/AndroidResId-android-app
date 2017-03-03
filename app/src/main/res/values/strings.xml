@@ -8,4 +8,5 @@
     <string name="telegram_channel">Telegram channel</string>
     <string name="github_repository">GitHub Repository</string>
     <string name="web">Web</string>
+    <string name="twitter">Twitter</string>
 </resources>

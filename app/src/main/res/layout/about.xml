@@ -20,13 +20,13 @@
         android:minHeight="10dp"
         android:text="@string/telegram_channel"
         android:textAlignment="center"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/about_description"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintHorizontal_bias="0.0" />
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/github_link"
@@ -42,19 +42,20 @@
         android:gravity="center|left"
         android:minHeight="10dp"
         android:text="@string/github_repository"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/telegram_link"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintHorizontal_bias="0.0" />
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/web_link"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="16dp"
@@ -63,17 +64,15 @@
         android:gravity="center|start"
         android:minHeight="10dp"
         android:text="@string/web"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/github_link"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginLeft="15dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintLeft_creator="1" />
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/about_description"
-        android:gravity="center"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -81,6 +80,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:gravity="center"
         android:text="Catalog of the most significant resources for Android developers"
         android:textAlignment="center"
         app:layout_constraintHorizontal_bias="0.0"
@@ -110,10 +110,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0.0.1"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_name"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintHorizontal_bias="0.501" />
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/twitter_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_twitter"
+        android:drawablePadding="8dp"
+        android:gravity="center|start"
+        android:minHeight="10dp"
+        android:text="@string/twitter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/web_link" />
 </android.support.constraint.ConstraintLayout>

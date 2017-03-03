@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "309475002057",
+    "firebase_url": "https://neural-cathode-650.firebaseio.com",
+    "project_id": "neural-cathode-650",
+    "storage_bucket": "neural-cathode-650.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309475002057:android:221e24a9b3cd618e",
+        "android_client_info": {
+          "package_name": "com.androidresid.androidapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309475002057-1gulesgr1m9gl1no92ndgs53can47dig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC24WVdP13Nafvg_V4dNTYOXuNGRfrrVww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

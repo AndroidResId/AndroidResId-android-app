@@ -9,9 +9,8 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
-import org.jetbrains.anko.find
-import org.jetbrains.anko.setContentView
-import org.jetbrains.anko.toast
+import com.androidresid.androidapp.components.MainUI
+import org.jetbrains.anko.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -49,8 +48,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 toast("Settings")
                 return true
             }
+
+            R.id.action_about -> {
+                showAbout()
+                return true
+            }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun showAbout() {
+        startActivity<AboutActivity>()
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {

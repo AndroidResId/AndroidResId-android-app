@@ -40,6 +40,7 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
         test.java.srcDirs += 'src/test/kotlin'
+        androidTest.java.srcDirs += 'src/androidTest/kotlin'
     }
 
     testOptions {
@@ -58,6 +59,7 @@ dependencies {
     compile libraries.appcompat
     compile libraries.appSupport
     compile libraries.design
+    compile libraries.constraint
     compile libraries.kotlinStdlib
     compile libraries.kotlinReflect
     compile libraries.anko
@@ -70,7 +72,14 @@ dependencies {
     testCompile libraries.junit
     testCompile libraries.mockitoCore
     testCompile libraries.kotlinJunit
+    testCompile libraries.kotlinStdlib
     testCompile libraries.robolectric
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestCompile 'com.android.support.test.espresso:espresso-intents:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
 }
 repositories {
     mavenCentral()

@@ -1,10 +1,12 @@
-package com.androidresid.androidapp
+package com.androidresid.androidapp.components
 
 import android.support.design.widget.AppBarLayout
 import android.support.v4.content.ContextCompat
 import android.support.v4.view.GravityCompat
 import android.util.TypedValue
 import android.view.Gravity
+import com.androidresid.androidapp.MainActivity
+import com.androidresid.androidapp.R
 import org.jetbrains.anko.*
 import org.jetbrains.anko.appcompat.v7.toolbar
 import org.jetbrains.anko.design.appBarLayout

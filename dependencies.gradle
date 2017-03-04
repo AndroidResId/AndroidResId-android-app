@@ -2,14 +2,17 @@ ext.versions = [
         code                : 1,
         name                : '0.1.0',
 
+        gradle              : '2.3.0',
+        kotlin              : '1.1.0',
+        jacoco              : '0.1.1',
+
         minSdk              : 19,
         targetSdk           : 25,
         compileSdk          : 25,
         buildTools          : '25.0.2',
 
-        gradle              : '3.4',
         support             : '25.2.0',
-        constraint          : '1.0.0-beta4',
+        constraint          : '1.0.1',
         rxJava              : '2.0.6',
         rxAndroid           : '2.0.1',
         anko                : '0.9.1',
@@ -21,10 +24,14 @@ ext.versions = [
 ]
 
 ext.libraries = [
+        gradlePlugin : "com.android.tools.build:gradle:$versions.gradle",
+        kotlinPlugin : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+        jacocoPlugin : "com.dicedmelon.gradle:jacoco-android:$versions.jacoco",
+
         appcompat    : "com.android.support:appcompat-v7:$versions.support",
         constraint   : "com.android.support.constraint:constraint-layout:$versions.constraint",
-        kotlinStdlib : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
-        kotlinReflect: "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
+        kotlinStdlib : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+        kotlinReflect: "org.jetbrains.kotlin:kotlin-reflect:$versions.kotlin",
         anko         : "org.jetbrains.anko:anko-sdk19:$versions.anko",
         ankoSupport  : "org.jetbrains.anko:anko-support-v4:$versions.anko",
         ankoAppCompat: "org.jetbrains.anko:anko-appcompat-v7:$versions.anko",
@@ -35,7 +42,7 @@ ext.libraries = [
         rxAndroid    : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
 
         junit        : "junit:junit:$versions.junit",
-        kotlinJunit  : "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version",
+        kotlinJunit  : "org.jetbrains.kotlin:kotlin-test-junit:$versions.kotlin",
         mockitoCore  : "org.mockito:mockito-core:$versions.mockito",
         espresso     : "com.android.support.test.espresso:espresso-core:$versions.espresso",
         robolectric  : "org.robolectric:robolectric:$versions.robolectric"

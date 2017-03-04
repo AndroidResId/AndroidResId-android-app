@@ -1,14 +1,21 @@
 machine:
   java:
     version: oraclejdk8
+  environment:
+    GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx1560m -XX:+HeapDumpOnOutOfMemoryError" -Dorg.gradle.daemon=false'
 
 dependencies:
   pre:
-    - echo y | android update sdk --no-ui --all --filter "android-25","build-tools-25.0.2","extra-android-m2repository"
+    - echo y | android -s update sdk -u -a -t "tools"
+    - mkdir -p "$ANDROID_HOME"/licenses
+    - echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME"/licenses/android-sdk-license
+    - echo y | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout;1.1.0"
+    - echo y | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.1.0"
+    - $ANDROID_HOME/tools/bin/sdkmanager "platform-tools" "extras;android;m2repository"
 
 test:
   override:
-    - emulator -avd circleci-android24 -no-window:
+    - emulator -avd circleci-android25 -no-window:
         background: true
         parallel: true
     - circle-android wait-for-boot

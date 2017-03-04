@@ -39,7 +39,7 @@ class AboutActivity : AppCompatActivity() {
         }
     }
 
-    private fun intentTwitter() {
+    private fun intentTelegram() {
         val appName = "org.telegram.messenger"
         val isAppInstalled = isAppAvailable(applicationContext, appName)
         if (isAppInstalled) {
@@ -49,7 +49,7 @@ class AboutActivity : AppCompatActivity() {
         }
     }
 
-    fun intentTelegram() {
+    fun intentTwitter() {
         val appName = "com.twitter.android"
         val isAppInstalled = isAppAvailable(applicationContext, appName)
         if (isAppInstalled) {

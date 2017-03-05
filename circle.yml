@@ -4,7 +4,7 @@ machine:
   environment:
     CIRCLECI: 1
     JAVA_OPTS: "-Xms1024m -Xmx1024m" 
-    GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx1560m -XX:+HeapDumpOnOutOfMemoryError" -Dorg.gradle.daemon=false
+    GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx1560m -XX:+HeapDumpOnOutOfMemoryError" -Dorg.gradle.daemon=false'
     ANDROID_HOME: /usr/local/android-sdk-linux
     CONSTRAINT_HOME: "$ANDROID_HOME/extras/m2repository/com/android/support/constraint/constraint-layout"
     CONSTRAINT_SOLVER_HOME: "$ANDROID_HOME/extras/m2repository/com/android/support/constraint/constraint-layout-solver"

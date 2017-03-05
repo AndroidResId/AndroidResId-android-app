@@ -23,7 +23,6 @@ dependencies:
     - wget https://dl.google.com/android/repository/com.android.support.constraint-constraint-layout-solver-$CONSTRAINT_VERSION.zip
     - unzip com.android.support.constraint-constraint-layout-solver-$CONSTRAINT_VERSION.zip
     - mv solver "$CONSTRAINT_SOLVER_HOME/$CONSTRAINT_VERSION"
-    # >> constraint-layout
     - echo y | android update sdk --no-ui --all --filter "build-tools-25.0.2"
     - echo y | android update sdk --no-ui --all --filter "tools"
     - echo y | android update sdk --no-ui --all --filter "platform-tools"

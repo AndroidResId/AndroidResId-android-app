@@ -8,7 +8,7 @@ machine:
     ANDROID_HOME: /usr/local/android-sdk-linux
     CONSTRAINT_HOME: "$ANDROID_HOME/extras/m2repository/com/android/support/constraint/constraint-layout"
     CONSTRAINT_SOLVER_HOME: "$ANDROID_HOME/extras/m2repository/com/android/support/constraint/constraint-layout-solver"
-    CONSTRAINT_VERSION: "1.1.0"
+    CONSTRAINT_VERSION: "1.0.1"
 
 dependencies:
   pre:

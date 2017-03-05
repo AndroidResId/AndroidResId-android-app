@@ -1,18 +1,38 @@
 machine:
   java:
     version: oraclejdk8
+  environment:
+    CIRCLECI: 1
+    JAVA_OPTS: "-Xms1024m -Xmx1024m" 
+    GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx1560m -XX:+HeapDumpOnOutOfMemoryError" -Dorg.gradle.daemon=false'
+    ANDROID_HOME: /usr/local/android-sdk-linux
+    CONSTRAINT_HOME: "$ANDROID_HOME/extras/m2repository/com/android/support/constraint/constraint-layout"
+    CONSTRAINT_SOLVER_HOME: "$ANDROID_HOME/extras/m2repository/com/android/support/constraint/constraint-layout-solver"
+    CONSTRAINT_VERSION: "1.0.1"
 
 dependencies:
   pre:
-    - echo y | android update sdk --no-ui --all --filter "android-25","build-tools-25.0.2","extra-android-m2repository"
+    - mkdir "$ANDROID_HOME/licenses" || true
+    - echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME/licenses/android-sdk-license"
+    - echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > "$ANDROID_HOME/licenses/android-sdk-preview-license"
+    - mkdir -p "$CONSTRAINT_HOME" || true
+    - mkdir -p "$CONSTRAINT_SOLVER_HOME" || true
+    - wget https://dl.google.com/android/repository/com.android.support.constraint-constraint-layout-$CONSTRAINT_VERSION.zip
+    - unzip com.android.support.constraint-constraint-layout-$CONSTRAINT_VERSION.zip
+    - mv constraintlayout "$CONSTRAINT_HOME/$CONSTRAINT_VERSION"
+    - wget https://dl.google.com/android/repository/com.android.support.constraint-constraint-layout-solver-$CONSTRAINT_VERSION.zip
+    - unzip com.android.support.constraint-constraint-layout-solver-$CONSTRAINT_VERSION.zip
+    - mv solver "$CONSTRAINT_SOLVER_HOME/$CONSTRAINT_VERSION"
+    - echo y | android update sdk --no-ui --all --filter "build-tools-25.0.2"
+    - echo y | android update sdk --no-ui --all --filter "tools"
+    - echo y | android update sdk --no-ui --all --filter "platform-tools"
+    - echo y | android update sdk --no-ui --all --filter "android-25"
+    - echo y | android update sdk --no-ui --all --filter "extra-android-m2repository"
 
 test:
   override:
-    - emulator -avd circleci-android24 -no-window:
-        background: true
-        parallel: true
-    - circle-android wait-for-boot
-    - ./gradlew connectedAndroidTest
+    - ./gradlew assembleRelease
+    - cp -r ./app/build/outputs $CIRCLE_ARTIFACTS
 
   post:
     - bash <(curl -s https://codecov.io/bash)

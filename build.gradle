@@ -1,18 +1,16 @@
 apply from: 'dependencies.gradle'
 
 buildscript {
-    ext.gradle_version = '2.3.0'
-    ext.kotlin_version = '1.1.0'
-    ext.jacoco_version = '0.1.1'
+    apply from: 'dependencies.gradle'
 
     repositories {
         jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.dicedmelon.gradle:jacoco-android:$jacoco_version"
+        classpath libraries.gradlePlugin
+        classpath libraries.kotlinPlugin
+        classpath libraries.jacocoPlugin
     }
 }
 

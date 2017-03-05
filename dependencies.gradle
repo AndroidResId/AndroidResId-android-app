@@ -12,7 +12,7 @@ ext.versions = [
         buildTools          : '25.0.2',
 
         support             : '25.2.0',
-        googlePlayServices  : '10.2.0',
+        googlePlayServices  : '10.0.1',
         constraint          : '1.0.1',
         rxJava              : '2.0.6',
         rxAndroid           : '2.0.1',

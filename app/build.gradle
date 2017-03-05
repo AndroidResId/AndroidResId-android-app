@@ -68,16 +68,18 @@ dependencies {
     compile libraries.ankoDesign
     compile libraries.rxJava
     compile libraries.rxAndroid
+    compile libraries.firebase
 
     testCompile libraries.junit
     testCompile libraries.mockitoCore
     testCompile libraries.kotlinJunit
     testCompile libraries.kotlinStdlib
     testCompile libraries.robolectric
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2', {
+
+    androidTestCompile(libraries.espresso) {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
-    androidTestCompile 'com.android.support.test.espresso:espresso-intents:2.2.2', {
+    androidTestCompile(libraries.espressoIntents) {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
 }

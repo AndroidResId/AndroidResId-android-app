@@ -2,7 +2,7 @@ ext.versions = [
         code                : 1,
         name                : '0.1.0',
 
-        gradle              : '2.3.0',
+        gradle              : '2.4.0-alpha3',
         kotlin              : '1.1.0',
         jacoco              : '0.1.1',
 
@@ -11,9 +11,9 @@ ext.versions = [
         compileSdk          : 25,
         buildTools          : '25.0.2',
 
-        support             : '25.2.0',
-        googlePlayServices  : '10.0.1',
-        constraint          : '1.0.1',
+        support             : '25.3.0',
+        googlePlayServices  : '10.2.1',
+        constraint          : '1.0.2',
         rxJava              : '2.0.6',
         rxAndroid           : '2.0.1',
         anko                : '0.9.1',
@@ -25,9 +25,9 @@ ext.versions = [
 ]
 
 ext.libraries = [
-        gradlePlugin : "com.android.tools.build:gradle:$versions.gradle",
-        kotlinPlugin : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
-        jacocoPlugin : "com.dicedmelon.gradle:jacoco-android:$versions.jacoco",
+        gradlePlugin        : "com.android.tools.build:gradle:$versions.gradle",
+        kotlinPlugin        : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+        jacocoPlugin        : "com.dicedmelon.gradle:jacoco-android:$versions.jacoco",
 
         appcompat           : "com.android.support:appcompat-v7:$versions.support",
         constraint          : "com.android.support.constraint:constraint-layout:$versions.constraint",

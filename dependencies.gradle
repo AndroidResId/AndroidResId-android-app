@@ -25,9 +25,9 @@ ext.versions = [
 ]
 
 ext.libraries = [
-        gradlePlugin : "com.android.tools.build:gradle:$versions.gradle",
-        kotlinPlugin : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
-        jacocoPlugin : "com.dicedmelon.gradle:jacoco-android:$versions.jacoco",
+        gradlePlugin        : "com.android.tools.build:gradle:$versions.gradle",
+        kotlinPlugin        : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+        jacocoPlugin        : "com.dicedmelon.gradle:jacoco-android:$versions.jacoco",
 
         appcompat           : "com.android.support:appcompat-v7:$versions.support",
         constraint          : "com.android.support.constraint:constraint-layout:$versions.constraint",

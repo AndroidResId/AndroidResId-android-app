@@ -6,8 +6,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/nav_header_bg"
-        android:scaleType="centerCrop" />
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/image_content_description" />
 
     <TextView
         style="@style/TextAppearance.AppCompat.Subhead"
@@ -15,6 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_margin="16dp"
-        android:text="Your Name Here"
+        android:textSize="20sp"
+        android:text="@string/catalog"
         android:textColor="@android:color/white" />
 </FrameLayout>

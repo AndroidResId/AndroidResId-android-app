@@ -1,17 +1,14 @@
 package com.androidresid.androidapp.components
 
 import android.support.design.widget.AppBarLayout
-import android.support.v4.content.ContextCompat
 import android.support.v4.view.GravityCompat
 import android.util.TypedValue
-import android.view.Gravity
 import com.androidresid.androidapp.MainActivity
 import com.androidresid.androidapp.R
 import org.jetbrains.anko.*
 import org.jetbrains.anko.appcompat.v7.toolbar
 import org.jetbrains.anko.design.appBarLayout
 import org.jetbrains.anko.design.coordinatorLayout
-import org.jetbrains.anko.design.floatingActionButton
 import org.jetbrains.anko.design.navigationView
 import org.jetbrains.anko.support.v4.drawerLayout
 
@@ -22,7 +19,7 @@ class MainUI : AnkoComponent<MainActivity> {
             id = R.id.drawer
             fitsSystemWindows = true
             coordinatorLayout {
-                coordinatorLayout(theme = R.style.Theme_AppCompat_NoActionBar)
+                coordinatorLayout(theme = R.style.AppTheme_NoActionBar)
 
                 appBarLayout {
                     toolbar {
@@ -39,20 +36,9 @@ class MainUI : AnkoComponent<MainActivity> {
                 relativeLayout {
                     horizontalPadding = resources.getDimensionPixelSize(R.dimen.activity_horizontal_margin)
                     verticalPadding = resources.getDimensionPixelSize(R.dimen.activity_vertical_margin)
-                    textView("Hello World!")
+                    textView(context.getString(R.string.project_description))
                 }.lparams(width = matchParent, height = matchParent) {
                     behavior = AppBarLayout.ScrollingViewBehavior()
-                }
-
-                floatingActionButton {
-                    imageResource = android.R.drawable.ic_dialog_email
-                    backgroundColor = ContextCompat.getColor(ui.owner, R.color.colorAccent)
-                    onClick {
-
-                    }
-                }.lparams {
-                    margin = resources.getDimensionPixelSize(R.dimen.fab_margin)
-                    gravity = Gravity.BOTTOM or GravityCompat.END
                 }
             }.lparams(width = matchParent, height = matchParent)
 

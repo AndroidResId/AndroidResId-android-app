@@ -22,7 +22,7 @@ class LaunchActivity : AppCompatActivity() {
                 orientation = LinearLayout.VERTICAL
 
                 imageView {
-                    imageResource = R.drawable.logo
+                    imageResource = R.drawable.img_logo_black
                 }
 
                 textView {

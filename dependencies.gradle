@@ -2,8 +2,8 @@ ext.versions = [
         code                : 1,
         name                : '0.1.0',
 
-        gradle              : '2.3.0',
-        kotlin              : '1.1.0',
+        gradle              : '2.3.1',
+        kotlin              : '1.1.1',
         jacoco              : '0.1.1',
 
         minSdk              : 19,
@@ -13,15 +13,15 @@ ext.versions = [
 
         support             : '25.3.1',
         googlePlayServices  : '10.2.1',
-        constraint          : '1.0.1',
+        constraint          : '1.0.2',
         rxJava              : '2.0.6',
         rxAndroid           : '2.0.1',
         anko                : '0.9.1',
 
         junit               : '4.12',
-        mockito             : '2.7.9',
+        mockito             : '2.7.22',
         espresso            : '2.2.2',
-        robolectric         : '3.2.2'
+        robolectric         : '3.3'
 ]
 
 ext.libraries = [

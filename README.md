@@ -1,5 +1,5 @@
 # AndroidResId Android application
-]![CircleCI build status](https://circleci.com/gh/AndroidResId/AndroidResId-android-app.svg?style=shield)](https://circleci.com/gh/AndroidResId/AndroidResId-android-app)
+[![CircleCI build status](https://circleci.com/gh/AndroidResId/AndroidResId-android-app.svg?style=shield)](https://circleci.com/gh/AndroidResId/AndroidResId-android-app)
 [![codecov.io](https://codecov.io/github/AndroidResId/AndroidResId-android-app/coverage.svg?branch=master)](https://codecov.io/github/AndroidResId/AndroidResId-android-app?branch=master)
 [![Join the chat at https://gitter.im/AndroidResId/android-app](https://badges.gitter.im/AndroidResId/android-app.svg)](https://gitter.im/AndroidResId/android-app?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 

@@ -3,23 +3,23 @@ ext.versions = [
         name                : '0.1.0',
 
         gradle              : '2.3.1',
-        kotlin              : '1.1.1',
+        kotlin              : '1.1.2',
         jacoco              : '0.1.1',
 
         minSdk              : 19,
         targetSdk           : 25,
         compileSdk          : 25,
-        buildTools          : '25.0.2',
+        buildTools          : '25.0.3',
 
         support             : '25.3.1',
-        googlePlayServices  : '10.2.1',
+        googlePlayServices  : '10.2.4',
         constraint          : '1.0.2',
-        rxJava              : '2.0.6',
+        rxJava              : '2.1.0',
         rxAndroid           : '2.0.1',
         anko                : '0.9.1',
 
         junit               : '4.12',
-        mockito             : '2.7.22',
+        mockito             : '2.8.9',
         espresso            : '2.2.2',
         robolectric         : '3.3'
 ]

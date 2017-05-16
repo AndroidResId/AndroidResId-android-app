@@ -2,7 +2,7 @@ ext.versions = [
         code                : 1,
         name                : '0.1.0',
 
-        gradle              : '2.3.1',
+        gradle              : '2.3.2',
         kotlin              : '1.1.2',
         jacoco              : '0.1.1',
 
@@ -21,7 +21,7 @@ ext.versions = [
         junit               : '4.12',
         mockito             : '2.8.9',
         espresso            : '2.2.2',
-        robolectric         : '3.3'
+        robolectric         : '3.3.2'
 ]
 
 ext.libraries = [

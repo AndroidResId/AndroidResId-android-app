@@ -1,0 +1,8 @@
+name: check Jira releases
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+        dry_run:
+          required: false
+          default: 'false'
